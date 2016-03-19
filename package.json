@@ -1,0 +1,35 @@
+{
+  "name": "mircolattice",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "ml": "./bin/ml.js"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamblue/mircolattice.git"
+  },
+  "author": "iamblue",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/iamblue/mircolattice/issues"
+  },
+  "homepage": "https://github.com/iamblue/mircolattice#readme",
+  "dependencies": {
+    "bluebird": "^3.3.3",
+    "browserify": "^13.0.0",
+    "cliopt": "0.0.5",
+    "colors": "^1.1.2",
+    "drivelist": "^2.0.7",
+    "fs-extra": "^0.26.5",
+    "lodash": "^4.6.1",
+    "read-installed": "^4.0.3",
+    "rimraf": "^2.5.2",
+    "uglify-js": "^2.6.2",
+    "youmeb-generator": "0.0.1"
+  }
+}
