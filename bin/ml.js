@@ -2,26 +2,18 @@
 process.title = 'ml';
 
 var cliopt = require('cliopt');
-var commands = require('../lib/command');
 var generator = require('youmeb-generator');
 var colors = require('colors');
+var Promise = require('bluebird');
+var fs = Promise.promisifyAll(require("fs"));
+var isfeatureConfigExist = false;
 
 var cmds = {
-  'burn': 'download code to chip',
+  'burn': 'Download code to chip',
+  'create': 'Create a new Microlattice.js project'
 };
 
-try {
-  var featureConfig = require(process.env.PWD + '/featureConfig');
-  var pkgPath = process.env.PWD + '/node_modules/ml-' + featureConfig.IC_CONFIG + '-config';
-  var pkg = require(pkgPath + '/package');
-  var requirePluginCommand = require(pkgPath + '/' + pkg.main);
-
-  for (command in requirePluginCommand) {
-    cmds[command] = requirePluginCommand[command].description;
-  }
-} catch(e) {
-  console.log(e);
-}
+var commands = [];
 
 var done = function(err){
   if (err) {
@@ -35,12 +27,42 @@ var parser = cliopt({
     default: false,
   }
 });
-
 parser.use(cliopt.pair());
 parser.use(cliopt.convert());
-parser.parse(process.argv.slice(2), function(err) {
-  var command = parser.args.shift();
-  if (cmds.hasOwnProperty(command)) {
-    return commands[command](parser.args, generator, done);
-  }
+
+fs.readFileAsync(process.env.PWD + '/featureConfig.json')
+.then(function() {
+  isfeatureConfigExist = true;
+  return init();
+})
+.catch(function() {
+  return init();
 });
+
+function init() {
+  if (process.argv[2] !== 'create' && !isfeatureConfigExist ) {
+    /* first use this project command */
+    console.log ("This folder is not a Microlattice.js project. Please input `ml create` to create a project!");
+  } else if (process.argv[2] === 'create') {
+    /* invoke create command */
+    return require('../lib/commands/create')(parser.args, generator, done)
+  } else {
+    /* other commands */
+    commands = require('../lib/command');
+    var featureConfig = require(process.env.PWD + '/featureConfig');
+    var pkgPath = process.env.PWD + '/node_modules/ml-' + featureConfig.IC_CONFIG + '-config';
+    var pkg = require(pkgPath + '/package');
+    var requirePluginCommand = require(pkgPath + '/' + pkg.main);
+
+    for (command in requirePluginCommand) {
+      cmds[command] = requirePluginCommand[command].description;
+    }
+
+    parser.parse(process.argv.slice(2), function(err) {
+      var command = parser.args.shift();
+      if (cmds.hasOwnProperty(command)) {
+        return commands[command](parser.args, generator, done);
+      }
+    });
+  }
+}
