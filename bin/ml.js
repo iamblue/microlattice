@@ -45,7 +45,11 @@ function init() {
     console.log ("This folder is not a Microlattice.js project. Please input `ml create` to create a project!");
   } else if (process.argv[2] === 'create') {
     /* invoke create command */
-    return require('../lib/commands/create')(parser.args, generator, done)
+    if (isfeatureConfigExist) {
+      return console.log("Your Microlattice.js project was existed!");
+    } else {
+      return require('../lib/commands/create')(parser.args, generator, done)
+    }
   } else {
     /* other commands */
     commands = require('../lib/command');
