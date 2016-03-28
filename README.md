@@ -15,16 +15,16 @@ Please, report all bugs and feature requests on [Microlattice issue tracker](htt
 * Initialize microlattice project
 
 ``` bash
-ml init
+ml create
 ```
 
-* donwload code to your device
+* [TBD] donwload code to your device
 
 ```
 ml burn
 ```
 
-* debugger ( use openOCD and GDB )
+* [TBD] debugger ( use openOCD and GDB )
 
 ```
 ml debugger
