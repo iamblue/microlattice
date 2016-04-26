@@ -25,7 +25,7 @@ Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerrys
   * LICENSE 問題：大部份廠商 SDK 皆有 dis-contribute 規範
   * 沒有共同的 sharing project 標準
   * 現成的 Js total solution 不夠輕量，不符合效能接近 C
-  * FreeRTOS 設計，沒有 filesystem 設計 ... 等等
+  * FreeRTOS 沒有 filesystem 的設計 ... 等等
 
 ## Microlattice command line
 
