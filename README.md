@@ -1,6 +1,6 @@
 # Microlattice.js
 
-Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerryscript is the Lightweight JavaScript engine for Internet of Things. Microlattice.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerryscript is the Lightweight JavaScript engine for Internet of Things. Microlattice.js uses an event-driven, non-blocking I/O model ( base on FreeRTOS Native api, without libuv )that makes it lightweight and efficient.
 
 ## Feature
 [English]
@@ -13,7 +13,7 @@ Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerrys
   * License: dis-contribute limitation.
   * No common sharing project standard.
   * Existing JS total solution is not light-weighted enough, providing low performance comparing to C.
-  * Most RTOS does not have file system design.
+  * FreeRTOS does not have file system design.
 
 [中文]
 * 真正為 IoT device 所設計的 IoT 版 Node.js.
@@ -25,7 +25,7 @@ Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerrys
   * LICENSE 問題：大部份廠商 SDK 皆有 dis-contribute 規範
   * 沒有共同的 sharing project 標準
   * 現成的 Js total solution 不夠輕量，不符合效能接近 C
-  * 大部份 RTOS 設計，沒有 filesystem 設計 ... 等等
+  * FreeRTOS 設計，沒有 filesystem 設計 ... 等等
 
 ## Microlattice command line
 
