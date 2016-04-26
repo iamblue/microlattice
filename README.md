@@ -8,7 +8,8 @@ Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerrys
 * Microlattice.js is adopting the similar coding style used in javascript community providing high performance like C.
 * Everything you need like tools, modules, and engine core are modular designed.
 * Providing standards for resolving the following issues you may encounter while developing embedded board:
-  * Different MCU build tools.Diverse in debug/download code.
+  * Different MCU build tools.
+  * Diverse in debug/download code.
   * License: dis-contribute limitation.
   * No common sharing project standard.
   * Existing JS total solution is not light-weighted enough, providing low performance comparing to C.
@@ -59,6 +60,9 @@ In MT7687 use case, please visit the [ml-mt7687-config](https://github.com/iambl
 ## About Jerryscript
 
 If you want to know about JerryScript, you can visit the [Jerryscript](https://github.com/Samsung/jerryscript) project on github.
+
+### Reference Slide
+
 
 ### License
 
