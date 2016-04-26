@@ -2,9 +2,29 @@
 
 Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerryscript is the Lightweight JavaScript engine for Internet of Things. Microlattice.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
-Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+## Feature
+[English]
+* Platform for IoT device (especially: wifi + MCU) with javascript.
+* Microlattice.js is adopting the similar coding style used in javascript community providing high performance like C.
+* Everything you need like tools, modules, and engine core are modular designed.
+* Providing standards for resolving the following issues you may encounter while developing embedded board:
+  * Different MCU build tools.Diverse in debug/download code.
+  * License: dis-contribute limitation.
+  * No common sharing project standard.
+  * Existing JS total solution is not light-weighted enough, providing low performance comparing to C.
+  * Most RTOS does not have file system design.
 
-Please, report all bugs and feature requests on [Microlattice issue tracker](https://github.com/iamblue/microlattice/issues). Feel free to ask questions on issue tracker.
+[中文]
+* 真正為 IoT device 所設計的 IoT 版 Node.js.
+* 針對 Javascript community 所熟悉的 coding style 追求接近 C 的效能
+* 每一個細節包含 tool, module, engine core 都是可以拆分重組
+* 提供標準解決以下開發 embedded board 常見問題:
+  * MCU build tool 環境各家很不一致
+  * Debug/ Download code 各家皆不一樣
+  * LICENSE 問題：大部份廠商 SDK 皆有 dis-contribute 規範
+  * 沒有共同的 sharing project 標準
+  * 現成的 Js total solution 不夠輕量，不符合效能接近 C
+  * 大部份 RTOS 設計，沒有 filesystem 設計 ... 等等
 
 ## Microlattice command line
 
