@@ -39,10 +39,10 @@ Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerrys
 ml create
 ```
 
-* [TBD] donwload code to your device
+* donwload code to your device
 
 ```
-ml burn
+ml burn [your bin file]
 ```
 
 * [TBD] debugger ( use openOCD and GDB )
