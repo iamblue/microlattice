@@ -57,6 +57,8 @@ ml debugger
 
 In MT7687 use case, please visit the [ml-mt7687-config](https://github.com/iamblue/ml-mt7687-config) on Github.
 
+MT7687 gitbook: [中文](https://www.gitbook.com/book/iamblue/microlattice-js-for-linkit-rtos/details/zh-TW)
+
 ## About Jerryscript
 
 If you want to know about JerryScript, you can visit the [Jerryscript](https://github.com/Samsung/jerryscript) project on github.
