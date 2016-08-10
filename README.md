@@ -31,7 +31,11 @@ Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerrys
 
 ### Usage
 
-* npm install ml-cli -g
+* Install
+
+```
+npm i microlattice -g
+```
 
 * Initialize microlattice project
 
