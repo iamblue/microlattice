@@ -61,7 +61,7 @@ ml debugger
 
 In MT7687 use case, please visit the [ml-mt7687-config](https://github.com/iamblue/ml-mt7687-config) on Github.
 
-MT7687 gitbook: [中文](https://www.gitbook.com/book/iamblue/microlattice-js-for-linkit-rtos/details/zh-TW) [English](https://www.gitbook.com/book/iamblue/microlattice-js-for-linkit-rtos/details/en)
+MT7687 gitbook: [中文](https://www.gitbook.com/book/iamblue/microlattice-js-for-linkit-rtos/details/zh-TW) /  [English](https://www.gitbook.com/book/iamblue/microlattice-js-for-linkit-rtos/details/en)
 
 ## About Jerryscript
 
