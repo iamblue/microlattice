@@ -1,3 +1,5 @@
+![](https://github.com/iamblue/microlattice/blob/master/microlattice_logo.png?raw=true) 
+
 # Microlattice.js
 
 Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerryscript is the Lightweight JavaScript engine for Internet of Things. Microlattice.js uses an event-driven, non-blocking I/O model ( base on FreeRTOS Native api, without libuv )that makes it lightweight and efficient.
