@@ -2,8 +2,11 @@
 
 Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerryscript is the Lightweight JavaScript engine for Internet of Things. Microlattice.js uses an event-driven, non-blocking I/O model ( base on FreeRTOS Native api, without libuv )that makes it lightweight and efficient.
 
+And... Microlattice.js is Fully support Mediatek Wifi+MCU chip (ex. MT7687, MT7697 ) 
+
 ## Feature
 [English]
+* Target support for all MTK wifi + MCU chips
 * Platform for IoT device (especially: wifi + MCU) with javascript.
 * Microlattice.js is adopting the similar coding style used in javascript community providing high performance like C.
 * Everything you need like tools, modules, and engine core are modular designed.
@@ -16,6 +19,7 @@ Microlattice.js® is a JavaScript runtime framework built on Jerryscript. Jerrys
   * FreeRTOS does not have file system design.
 
 [中文]
+* 目標支援所有 MTK wifi + MCU 晶片 (ex. MT7687, MT7697)
 * 真正為 IoT device 所設計的 IoT 版 Node.js.
 * 針對 Javascript community 所熟悉的 coding style 追求接近 C 的效能
 * 每一個細節包含 tool, module, engine core 都是可以拆分重組
@@ -58,6 +62,7 @@ ml debugger
 ## Support chip list
 
 * MT7687 (cm4 + wifi )
+* MT7697 (cm4 + wifi )
 
 In MT7687 use case, please visit the [ml-mt7687-config](https://github.com/iamblue/ml-mt7687-config) on Github.
 
